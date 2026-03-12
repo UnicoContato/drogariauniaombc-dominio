@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drogaria União A J</title>
+    <meta name="description" content="Drogaria União - Cuidando da sua saúde com respeito e confiança.">
+    <meta property="og:title" content="Drogaria União A J">
+    <meta property="og:description" content="Medicamentos, perfumaria e atendimento humanizado.">
+    <meta property="og:image" content="https://drogariauniaombc.com.br/img/1.jpeg">
+    <meta property="og:url" content="http://drogariauniaombc.com.br">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#8b1526',
+                            light: '#a31b30',
+                            dark: '#690e1b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
+
+    <header id="main-header" class="fixed w-full top-0 z-50 transition-transform duration-300 glass shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#inicio" class="text-2xl font-bold text-primary tracking-tight">Drogaria União</a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-primary font-medium transition-colors">Início</a>
+                    <a href="#sobre" class="text-gray-700 hover:text-primary font-medium transition-colors">Sobre Nós</a>
+                    <a href="#servicos" class="text-gray-700 hover:text-primary font-medium transition-colors">Serviços</a>
+                    <a href="#galeria" class="text-gray-700 hover:text-primary font-medium transition-colors">Galeria</a>
+                    <a href="#contato" class="text-gray-700 hover:text-primary font-medium transition-colors">Contato</a>
+                </nav>
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/88996108586" target="_blank" class="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-full font-semibold transition-all hover-scale shadow-lg shadow-green-600/30">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Peça pelo WhatsApp
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="btn-menu" class="text-primary hover:text-primary-dark focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="menu-mobile" class="hidden md:hidden glass border-t border-gray-200">
+            <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                <a href="#inicio" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100">Início</a>
+                <a href="#sobre" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100">Sobre Nós</a>
+                <a href="#servicos" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100">Serviços</a>
+                <a href="#galeria" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100">Galeria</a>
+                <a href="#contato" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100">Contato</a>
+                <a href="https://wa.me/88996108586" target="_blank" class="flex items-center gap-2 mt-4 bg-green-600 text-white px-4 py-2 rounded-md text-base font-medium hover:bg-green-700 w-fit">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Peça pelo WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center bg-[url('img/4.jpg')] bg-cover bg-center bg-no-repeat pt-20">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-primary/20 text-white border border-primary/50 text-sm font-semibold mb-6 backdrop-blur-sm">Sinônimo de Saúde e Economia</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg text-balance">Drogaria União</h1>
+            <p class="text-xl md:text-3xl text-gray-200 mb-10 font-light drop-shadow-md text-balance">Cuidando de você e de quem você ama com respeito, confiança e o melhor atendimento.</p>
+            <a href="https://wa.me/88996108586" target="_blank" class="group flex items-center justify-center gap-3 bg-primary hover:bg-primary-light text-white text-lg px-8 py-4 rounded-full font-bold transition-all hover-scale shadow-[0_0_20px_rgba(139,21,38,0.4)]">
+                Faça seu Pedido Agora
+                <svg class="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 bg-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-primary mb-8 relative inline-block">
+                Sobre Nós
+                <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-primary rounded-full"></span>
+            </h2>
+            <div class="text-lg text-gray-600 space-y-6 leading-relaxed mt-10 text-left">
+                <p>A Drogaria União nasceu em 2017 com um propósito claro: cuidar da saúde das pessoas com respeito, confiança e atendimento humanizado. Desde o início, a empresa foi fundada com a missão de oferecer medicamentos de qualidade, preços justos e um atendimento próximo da comunidade.</p>
+                <p>Com muito trabalho, dedicação e compromisso com cada cliente, a Drogaria União foi conquistando a confiança da população e se tornando uma referência no setor farmacêutico na cidade. Mais do que uma farmácia, a empresa se tornou um ponto de apoio para quem busca orientação, cuidado e bem-estar.</p>
+                <p>Ao longo dos anos, a Drogaria União ampliou seu mix de produtos, oferecendo medicamentos, perfumaria, higiene pessoal e diversos itens voltados para a saúde e qualidade de vida. Sempre acompanhando as evoluções do mercado farmacêutico, mas mantendo como prioridade o atendimento humano e a proximidade com seus clientes.</p>
+                <p>O crescimento da Drogaria União é resultado do esforço diário de seus colaboradores e da confiança de cada cliente que faz parte dessa história. Cada atendimento, cada orientação e cada sorriso reforçam o compromisso da empresa em continuar cuidando da saúde da comunidade.</p>
+                <p class="font-semibold text-gray-800 text-xl text-center mt-8 p-6 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm">Hoje, a Drogaria União segue firme em sua missão de servir, crescer e inovar, sempre mantendo os mesmos valores que deram origem à empresa: união, cuidado, confiança e compromisso com a saúde.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-4 relative inline-block">
+                    Nossos Serviços
+                    <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-primary rounded-full"></span>
+                </h2>
+                <p class="text-gray-600 mt-6 text-lg">Tudo o que você precisa em um só lugar.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <div class="glass bg-white p-10 rounded-3xl text-center hover-scale shadow-lg hover:shadow-xl transition-all border border-gray-100 group">
+                    <div class="w-20 h-20 mx-auto bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <svg class="w-12 h-12 text-primary mx-auto mb-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="currentColor"> <path fill="none" d="M0 0H24V24H0z" /> <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" /> </g> </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Medicamentos</h3>
+                    <p class="text-gray-600 leading-relaxed">Ampla variedade de medicamentos éticos, genéricos e similares com os melhores preços da região, garantindo seu tratamento com economia.</p>
+                </div>
+
+                <div class="glass bg-white p-10 rounded-3xl text-center hover-scale shadow-lg hover:shadow-xl transition-all border border-gray-100 group">
+                    <div class="w-20 h-20 mx-auto bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <svg class="w-12 h-12 text-primary mx-auto mb-4" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 442 442" xml:space="preserve"> <g> <path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" /> <path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10 c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682 C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85 c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10 V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10 v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" /> </g> </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Perfumaria</h3>
+                    <p class="text-gray-600 leading-relaxed">Linha completa de cosméticos, produtos de higiene pessoal, cuidados para cabelos e corpo para você se sentir sempre bem.</p>
+                </div>
+
+                <div class="glass bg-white p-10 rounded-3xl text-center hover-scale shadow-lg hover:shadow-xl transition-all border border-gray-100 group">
+                    <div class="w-20 h-20 mx-auto bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <svg class="w-12 h-12 text-primary mx-auto mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.em" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Atendimento</h3>
+                    <p class="text-gray-600 leading-relaxed">Equipe capacitada e pronta para oferecer orientação farmacêutica humanizada, tirando suas dúvidas com atenção e cuidado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-4 relative inline-block">
+                    Nossa Estrutura
+                    <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-primary rounded-full"></span>
+                </h2>
+                <p class="text-gray-600 mt-6 text-lg">Conheça o espaço preparado especialmente para você.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-2xl shadow-md cursor-pointer hover:shadow-xl transition-shadow group">
+                    <img src="img/1.jpeg" alt="Fachada Drogaria União" class="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-md cursor-pointer hover:shadow-xl transition-shadow group">
+                    <img src="img/2.jpeg" alt="Entrada Drogaria União" class="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-md cursor-pointer hover:shadow-xl transition-shadow group">
+                    <img src="img/3.jpeg" alt="Interior Loja" class="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-md cursor-pointer hover:shadow-xl transition-shadow group">
+                    <img src="img/4.jpeg" alt="Seção de Conveniência" class="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-md cursor-pointer hover:shadow-xl transition-shadow group">
+                    <img src="img/5.jpeg" alt="Seção de Perfumaria e Tinturas" class="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-md cursor-pointer hover:shadow-xl transition-shadow group">
+                    <img src="img/6.jpeg" alt="Vista Externa Drogaria" class="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 bg-gray-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-4 relative inline-block">
+                    Contato e Localização
+                    <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-primary rounded-full"></span>
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                
+                <div class="p-10 md:p-14 flex flex-col justify-center">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-8">Fale Conosco</h3>
+                    
+                    <ul class="space-y-8">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div class="ml-5">
+                                <h4 class="text-lg font-bold text-gray-800">Endereço</h4>
+                                <p class="text-gray-600 mt-1">R CORONEL JOSE ADERALDO, 59 - ANEXO A<br>Bairro: CENTRO<br>MOMBACA - CE<br>CEP: 63.610-000</p>
+                            </div>
+                        </li>
+                        
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div class="ml-5">
+                                <h4 class="text-lg font-bold text-gray-800">Telefones</h4>
+                                <p class="text-gray-600 mt-1">(88) 99610-8586 - (88) 99675-9039</p>
+                            </div>
+                        </li>
+                        
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div class="ml-5">
+                                <h4 class="text-lg font-bold text-gray-800">E-mail</h4>
+                                <p class="text-gray-600 mt-1 break-all">DROGARIAUNIAOMBC@OUTLOOK.COM</p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-start pt-4 border-t border-gray-100">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gray-100 text-gray-500 rounded-xl flex items-center justify-center mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            </div>
+                            <div class="ml-5">
+                                <h4 class="text-lg font-bold text-gray-800">Dados da Empresa</h4>
+                                <p class="text-gray-600 mt-1 text-sm">
+                                    <span class="font-semibold">Razão Social:</span> A J COMERCIAL DE MEDICAMENTOS LTDA<br>
+                                    <span class="font-semibold">CNPJ:</span> 26.536.947/0001-05
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="h-[500px] lg:h-auto bg-gray-200 relative">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.870343354465!2d-39.6300435!3d-5.7460143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b112d7f8a33591%3A0xc8b2c453c89ccab5!2sR.%20Cel.%20Jos%C3%A9%20Aderaldo%2C%2059%20-%20Centro%2C%20Momba%C3%A7a%20-%20CE%2C%2063610-000!5e0!3m2!1spt-BR!2sbr!4v1715694300000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="absolute inset-0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t-4 border-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <h2 class="text-2xl font-bold text-white mb-2 tracking-tight">Drogaria União</h2>
+                    <p class="text-sm text-gray-400">© 2026 A J COMERCIAL DE MEDICAMENTOS LTDA. Todos os direitos reservados.<br>CNPJ: 26.536.947/0001-05</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="#" id="open-modal" class="text-gray-400 hover:text-white transition-colors text-sm underline underline-offset-4">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal-privacidade" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 sm:p-6">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity"></div>
+        <div class="relative glass bg-white w-full max-w-2xl rounded-2xl shadow-2xl p-8 max-h-[90vh] overflow-y-auto transform transition-all">
+            <button id="close-modal" class="absolute top-6 right-6 text-gray-400 hover:text-primary transition-colors focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Política de Privacidade</h3>
+            <div class="text-gray-600 space-y-4 text-sm leading-relaxed">
+                <p>A Drogaria União respeita a sua privacidade e garante o sigilo total das informações que você nos fornece. Nosso site possui caráter institucional e informativo, e não realizamos a coleta de dados pessoais, cadastros de senhas ou dados de cartões de crédito diretamente em nossa plataforma.</p>
+                <p>O único canal de interação direta através do nosso site é o redirecionamento para o aplicativo WhatsApp, onde o contato ocorre em ambiente externo e sujeito às políticas de privacidade da respectiva plataforma da Meta Inc.</p>
+                <p>Não utilizamos cookies invasivos para rastreamento de comportamento individualizado. Eventuais métricas de acesso são coletadas de forma anônima com o único propósito de melhorar a experiência de navegação e a performance estrutural da nossa página.</p>
+                <p>Reservamo-nos o direito de modificar esta política a qualquer momento, visando sempre a segurança e o respeito aos nossos clientes, mantendo o compromisso de transparência.</p>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-100 flex justify-end">
+                <button id="btn-entendi" class="bg-primary hover:bg-primary-light text-white px-6 py-2.5 rounded-lg font-medium transition-colors">Entendi</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
